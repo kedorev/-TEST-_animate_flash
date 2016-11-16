@@ -1,0 +1,23 @@
+#id1
+{
+    animation: pulse 7s infinite; /* nom définit pour l'animation / le temps de l'animation / le nombre de répétitions */
+    width: 200px;
+    height: 200px;
+    animation-delay: 10s; /* Définit un timer sur une animation */
+}
+
+@keyframes pulse
+ {
+    0%
+    {
+        background-color: #000000;
+    }
+    50%
+    {
+        background-color: #ffffff;
+    }
+    100%
+    {
+        background-color: #000000;
+    }
+ }
