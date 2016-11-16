@@ -3,7 +3,30 @@
     animation: pulse 7s infinite; /* nom définit pour l'animation / le temps de l'animation / le nombre de répétitions */
     width: 200px;
     height: 200px;
-    animation-delay: 10s; /* Définit un timer sur une animation */
+}
+
+#id2
+{
+    animation: loading 5s; /* nom définit pour l'animation / le temps de l'animation / le nombre de répétitions */
+    width: 200px;
+    height: 200px;
+    animation-iteration-count: 1;
+    background-color: green;
+}
+
+
+#id2
+{
+    animation: rotation 5s; /* nom définit pour l'animation / le temps de l'animation / le nombre de répétitions */
+    width: 200px;
+    height: 200px;
+    animation-iteration-count: 1;
+    background-color: green;
+    /**
+    *   ease-in         : commence lentement
+    *   ease-out        : finit lentement
+    *   ease-in-out     :
+    **/
 }
 
 @keyframes pulse
@@ -21,3 +44,29 @@
         background-color: #000000;
     }
  }
+
+
+
+@keyframes loading
+{
+    0%
+    {
+        width:200px;
+    }
+    100%
+    {
+        width: 1000px;
+    }
+}
+
+
+@font-face
+{
+    font-family: lobster;
+    src: url(Font/Lobster-Regular.ttf);
+}
+
+h1
+{
+    font-family: lobster;
+}
